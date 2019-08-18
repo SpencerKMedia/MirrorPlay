@@ -1,0 +1,52 @@
+﻿// Essential Colors
+$white : #e8f1f2;
+
+$black : #090909;
+
+$gray : #343a40;
+
+$primary: #ff611a;
+
+$primary-hover: rgba(255, 97, 26, .8);
+
+h1,h2,h3,h4,h5,h6,p,span,i,.h1,.h2,.h3,.h4,.h5,.h6,.p{
+    color: $gray;
+}
+
+.btn-primary:active {
+    color: $white !important;
+    background-color: $primary;
+    background-color: $primary-hover;
+}
+.btn-primary:hover {
+    color: $white !important;
+    background-color: $primary;
+    background-color: $primary-hover;
+}
+.btn-primary {
+    background-color: $primary;
+    color: $white !important;
+}
+
+.landing *{
+    color: $white;
+}
+.jewel-pod {
+    color: $white;
+}
+
+body {
+    background-color: $white;
+}
+
+.color-white, .color-white *{
+    color: $white;
+}
+
+.background-primary{
+    background-color: $primary;
+}
+
+.background-gray{
+    background-color: $gray;
+}
