@@ -13,5 +13,11 @@ namespace MirrorPlay.Controllers
         {
             return View();
         }
+
+        // GET: V/Video
+        public ActionResult Video()
+        {
+            return View();
+        }
     }
 }
