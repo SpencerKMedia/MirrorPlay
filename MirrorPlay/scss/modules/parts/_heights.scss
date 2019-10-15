@@ -1,0 +1,53 @@
+.h10, h20, h30, h40, h60, h70, h80, h90 {
+    height: auto;
+}
+
+.h10 {
+    min-height: 10vh;
+}
+
+.h20 {
+    min-height: 20vh;
+}
+
+.h30 {
+    min-height: 30vh;
+}
+
+.h40 {
+    min-height: 40vh;
+}
+
+.h60 {
+    min-height: 60vh;
+}
+
+.h70 {
+    min-height: 70vh;
+}
+
+.h80 {
+    min-height: 80vh;
+}
+
+.h90 {
+    min-height: 90vh;
+}
+
+.quarter-height {
+    min-height: 25vh;
+}
+
+.half-height {
+    min-height: 50vh;
+    height: auto;
+}
+
+.three-quarter-height {
+    min-height: 75vh;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: auto;
+}
