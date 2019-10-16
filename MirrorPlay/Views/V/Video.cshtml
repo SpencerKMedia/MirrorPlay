@@ -9,44 +9,68 @@
     <div class="container-fluid video-page-container">
         <div class="video-object-container">
             <!-- When we update to custom video player - add class theatre to video-player-container for theatre mode -->
-            <div class="col-md-12 video-player-container">
+            <div class="video-player-container">
                 <div class="player">
-                    <video class="afterglow" id="v_1234" poster="https://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.jpg" width="1920" height="1080" src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1.mp4">
-                        <source type="video/mp4" src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.mp4" data-quality="hd" />
-                        <source type="video/mp4" src="https://res.cloudinary.com/spencer-k-media/video/upload/c_scale,h_720,w_1280/v1557034095/Lower_Third_1_1080.mp4" />
-                        <source type="video/webm" src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.webm" data-quality="hd" />
-                        <source type="video/webm" src="https://res.cloudinary.com/spencer-k-media/video/upload/c_scale,h_720,w_1280/v1557034095/Lower_Third_1_1080.webm" />
-                        <source type="video/ogg" src="http://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.ogg" data-quality="hd" />
-                        <source type="video/ogg" src="https://res.cloudinary.com/spencer-k-media/video/upload/c_scale,h_720,w_1280/v1557034095/Lower_Third_1_1080.ogg" />
+                    <video poster="https://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.jpg" id="player" class="video-player"  controls>
+                        <source type="video/mp4" sizes="1080" src="https://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.mp4" data-quality="hd" />
+                        <source type="video/mp4" sizes="720" src="https://res.cloudinary.com/spencer-k-media/video/upload/c_scale,h_720,w_1280/v1557034095/Lower_Third_1_1080.mp4" />
+                        <source type="video/webm" sizes="1080" src="https://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.webm" data-quality="hd" />
+                        <source type="video/webm" sizes="720" src="https://res.cloudinary.com/spencer-k-media/video/upload/c_scale,h_720,w_1280/v1557034095/Lower_Third_1_1080.webm" />
+                        <source type="video/ogg" sizes="1080" src="https://res.cloudinary.com/spencer-k-media/video/upload/v1557034095/Lower_Third_1_1080.ogg" data-quality="hd" />
+                        <source type="video/ogg" sizes="720" src="https://res.cloudinary.com/spencer-k-media/video/upload/c_scale,h_720,w_1280/v1557034095/Lower_Third_1_1080.ogg" />
                     </video>
                 </div>
                 
             </div>
         </div>
-        <div class="container-fluid video-content">
-             <div class="col-md-12">
-                 <ul class="list-inline">
-                     <li class="list-inline-item"><img class="author-icon" src="https://mixer.com/api/v1/users/104219655/avatar?w=64&h=64" /></li>
-                     <li class="list-inline-item"><p class="author-title">Redb3ardTV</p>
+        <div class="container-medium video-content">
+            <ul class="list-inline">
+                <li><h2>Video Title</h2></li>
+            </ul>
+            <div class="col-md-3 align-top">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><img class="author-icon" src="https://mixer.com/api/v1/users/104219655/avatar?w=64&h=64" /></li>
+                    <li class="list-inline-item">
+                        <p class="author-title">Redb3ardTV</p>
                         <ul class="author-details list-unstyled">
                             <li class="list-inline-item follow"><button class="btn btn-outline-dark">Follow</button></li>
                             <li class="list-inline-item notifications"><button class="btn"><i class="fas fa-bell"></i></button></li>
                         </ul>
-                     </li>
-                     <li class="list-inline-item separator"> </li>
-                     <li class="list-inline-item video-tabs active"><p id="tab-description">Description</p></li>
-                     <li class="list-inline-item video-tabs"><p id="tab-vods">VODs</p></li>
-                     <li class="list-inline-item video-tabs"><p id="tab-info">More Info</p></li>
-                     <li class="list-inline-item separator"></li>
-                     <li class="list-inline-item"><img class="cover-icon" src="https://gameart.mixer.com/art/550441/cover.jpg" /></li>
-                     <li class="list-inline-item">
-                         <ul class="stream-details list-unstyled">
-                             <li class="list-item stream-title">Lorem Ipsum Dolar</li>
-                             <li class="list-item stream-game">Call of Duty: Black Ops 4 <small class="rating">18<sup>+</sup> VOD</small></li>
-                         </ul>
-                     </li>
-                 </ul>
-             </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5 align-top">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link video-tabs active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Description</a>
+                        <a class="nav-item nav-link video-tabs" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">VODs</a>
+                        <a class="nav-item nav-link video-tabs" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">More Info</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et justo non enim tempus sodales. Integer a leo nec nibh vulputate sollicitudin ut a dolor. Maecenas at nunc luctus, facilisis purus non, tristique lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis diam lobortis nunc finibus rhoncus. Mauris ex nulla, consequat eget leo id, consequat gravida leo. Phasellus id augue mattis, blandit ligula ac, maximus eros.
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et justo non enim tempus sodales. Integer a leo nec nibh vulputate sollicitudin ut a dolor. Maecenas at nunc luctus, facilisis purus non, tristique lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis diam lobortis nunc finibus rhoncus. Mauris ex nulla, consequat eget leo id, consequat gravida leo. Phasellus id augue mattis, blandit ligula ac, maximus eros.<br /><br />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et justo non enim tempus sodales. Integer a leo nec nibh vulputate sollicitudin ut a dolor. Maecenas at nunc luctus, facilisis purus non, tristique lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis diam lobortis nunc finibus rhoncus. Mauris ex nulla, consequat eget leo id, consequat gravida leo. Phasellus id augue mattis, blandit ligula ac, maximus eros.
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et justo non enim tempus sodales. Integer a leo nec nibh vulputate sollicitudin ut a dolor. Maecenas at nunc luctus, facilisis purus non, tristique lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis diam lobortis nunc finibus rhoncus. Mauris ex nulla, consequat eget leo id, consequat gravida leo. Phasellus id augue mattis, blandit ligula ac, maximus eros.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 align-top">
+                <ul class="list-unstyled">
+                    <li class="list-inline-item"><img class="cover-icon" src="https://gameart.mixer.com/art/550441/cover.jpg" /></li>
+                    <li class="list-inline-item">
+                        <ul class="stream-details list-unstyled">
+                            <li class="list-item stream-title">Lorem Ipsum Dolar</li>
+                            <li class="list-item stream-game">Call of Duty: Black Ops 4 <small class="rating">18<sup>+</sup> VOD</small></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 

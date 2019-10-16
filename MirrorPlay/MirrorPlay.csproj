@@ -458,7 +458,6 @@
     <Content Include="scss\vendor\bootstrap\_type.scss" />
     <Content Include="scss\vendor\bootstrap\_utilities.scss" />
     <Content Include="scss\vendor\bootstrap\_variables.scss" />
-    <Content Include="scss\vendor\videojs\_videojs.scss" />
     <Content Include="webfonts\fa-brands-400.eot" />
     <Content Include="webfonts\fa-brands-400.ttf" />
     <Content Include="webfonts\fa-brands-400.woff" />
@@ -479,6 +478,11 @@
     <Content Include="Views\V\Video.cshtml" />
     <Content Include="Views\Shared\_Channel.cshtml" />
     <Content Include="Views\Channel\Index.cshtml" />
+    <Content Include="scss\partials\_grid.scss" />
+    <Content Include="scss\modules\parts\_all.scss" />
+    <Content Include="scss\modules\parts\_containers.scss" />
+    <Content Include="scss\modules\parts\_heights.scss" />
+    <Content Include="scss\modules\parts\_text.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

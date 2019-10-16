@@ -7,6 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+    
 </head>
 <body class="frontend">
     <nav class="navbar navbar-light navbar-expand-md bg-white justify-content-center py-4">
@@ -20,19 +21,19 @@
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item dropdown">
-                        
+
                         <a class="nav-link dropdown-toggle full-width-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Videos
                         </a>
                         <div class="dropdown-menu full-width" aria-labelledby="navbarDropdown">
                             <div class="container">
-                                @Html.ActionLink("All", "Index", "V", routeValues: null, htmlAttributes: new { @class = "dropdown-item"})
+                                @Html.ActionLink("All", "Index", "V", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
                                 <a class="dropdown-item" href="#">By Category</a>
                                 <a class="dropdown-item" href="#">By Popularity</a>
                                 <a class="dropdown-item" href="#">Featured</a>
                                 <div>
                                 </div>
-</li>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Advertising</a>
                     </li>
@@ -119,10 +120,17 @@
         </div>
     </div>
     <script id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/091fe72160bfee34a08119a2c/b993fcf7a5a8d2b784c7869e3.js");</script>
-    <script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/admin")
     @RenderSection("scripts", required: false)
+
+    <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+    <script>
+        const player = new Plyr('#player', {
+            quality: '{ default: 1080, options: [1080, 720, 576, 480, 360, 240] }',
+        });
+    </script>
+
 </body>
 </html>
