@@ -9783,7 +9783,7 @@ h1, h2, h3, h4, h5, h6, p, span, i, .h1, .h2, .h3, .h4, .h5, .h6, .p {
 .landing * {
   color: #e8f1f2; }
 
-.jewel-pod {
+.pod {
   color: #e8f1f2; }
 
 body {
@@ -9812,6 +9812,9 @@ a, a:hover, a:focus {
   color: inherit;
   text-decoration: none;
   transition: all 0.3s; }
+
+body {
+  overflow-x: hidden; }
 
 .container {
   padding-left: 15px;
@@ -9950,7 +9953,7 @@ body.frontend {
   src: url("Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("Gotham-Medium.woff2") format("woff2"), url("Gotham-Medium.woff") format("woff"), url("Gotham-Medium.ttf") format("truetype"), url("Gotham-Medium.svg#Gotham-Medium") format("svg");
   font-style: normal; }
 
-.jewel-pod {
+.pod {
   background-size: contain;
   font-family: Gotham;
   min-height: 45vh;
@@ -9961,18 +9964,18 @@ body.frontend {
   text-align: center;
   padding: 0; }
 
-.jewel-pod.responsive {
-  background-image: url(/Images/responsive-jewel.png);
-  background-image: url(/Images/responsive-jewel.svg); }
+.pod.support {
+  background-image: url("/Images/POD 2.png");
+  background-image: url("/Images/POD 2.svg"); }
 
-.jewel-pod.create {
-  background-image: url(/Images/create-jewel.png);
-  background-image: url(/Images/create-jewel.svg); }
+.pod.create {
+  background-image: url("/Images/POD 1.png");
+  background-image: url("/Images/POD 1.svg"); }
 
-.jewel-pod.right {
+.pod.right {
   background-position: right center; }
 
-.jewel-pod.left {
+.pod.left {
   background-position: left center; }
 
 .navbar {
