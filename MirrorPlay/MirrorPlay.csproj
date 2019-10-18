@@ -477,6 +477,7 @@
     <Content Include="scss\modules\parts\_heights.scss" />
     <Content Include="scss\modules\parts\_text.scss" />
     <Content Include="scss\modules\parts\_video.scss" />
+    <Content Include="scss\modules\parts\_highlights.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
