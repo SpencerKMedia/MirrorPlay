@@ -1,0 +1,83 @@
+﻿@media screen and (min-width: 300px) {
+    .highlights {
+        background-image: url('/Images/bg-wave-s.svg');
+        min-height: 90vh;
+        padding-top: 14vh;
+    }
+}@media screen and (min-width: 768px) {
+
+    .highlights {
+        min-height: 75vh;
+        background-image: url('/Images/bg-wave-m.svg');
+        padding-top: 16vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .highlights {
+        width: 150vw;
+        max-width: 100%;
+        max-height: 80vh;
+        height: auto;
+        min-height: 105vh;
+        padding-top: 3rem;
+        background-image: url('/Images/bg-wave-m.svg');
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .highlights {
+        width: 150vw;
+        max-width: 100%;
+        max-height: 80vh;
+        height: auto;
+        min-height: 105vh;
+        padding-top: 4rem;
+        background-image: url('/Images/bg-wave-l.svg');
+    }
+
+    .highlights h2 {
+        Font-size: 36px
+    }
+
+    .highlights .ico-med {
+        Font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .highlights {
+        width: 150vw;
+        max-width: 100%;
+        max-height: 80vh;
+        height: auto;
+        min-height: 105vh;
+        padding-top: 9rem;
+        background-image: url('/Images/bg-wave-xl.svg');
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .highlights {
+        width: 200vw;
+        max-width: 100%;
+        max-height: 80vh;
+        height: auto;
+        min-height: 90vh;
+        padding-top: 15rem;
+        background-image: url('/Images/bg-wave-xl.svg');
+    }
+}
+
+
+.highlights {
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.highlights h1 {
+    font-size: 4em;
+    font-weight: 500;
+}

@@ -9898,6 +9898,75 @@ h1 {
 p {
   font-size: 20px; }
 
+.video-player {
+  min-height: 100vh; }
+
+@media screen and (min-width: 300px) {
+  .highlights {
+    background-image: url("/Images/bg-wave-s.svg");
+    min-height: 90vh;
+    padding-top: 14vh; } }
+
+@media screen and (min-width: 768px) {
+  .highlights {
+    min-height: 75vh;
+    background-image: url("/Images/bg-wave-m.svg");
+    padding-top: 16vh; } }
+
+@media screen and (min-width: 1024px) {
+  .highlights {
+    width: 150vw;
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    min-height: 105vh;
+    padding-top: 3rem;
+    background-image: url("/Images/bg-wave-m.svg"); } }
+
+@media screen and (min-width: 1200px) {
+  .highlights {
+    width: 150vw;
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    min-height: 105vh;
+    padding-top: 4rem;
+    background-image: url("/Images/bg-wave-l.svg"); }
+  .highlights h2 {
+    Font-size: 36px; }
+  .highlights .ico-med {
+    Font-size: 36px; } }
+
+@media screen and (min-width: 1600px) {
+  .highlights {
+    width: 150vw;
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    min-height: 105vh;
+    padding-top: 9rem;
+    background-image: url("/Images/bg-wave-xl.svg"); } }
+
+@media screen and (min-width: 2200px) {
+  .highlights {
+    width: 200vw;
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    min-height: 90vh;
+    padding-top: 15rem;
+    background-image: url("/Images/bg-wave-xl.svg"); } }
+
+.highlights {
+  background-size: contain;
+  background-attachment: scroll;
+  background-position: top center;
+  background-repeat: no-repeat; }
+
+.highlights h1 {
+  font-size: 4em;
+  font-weight: 500; }
+
 /* Import Partials */
 .vert-center {
   padding: 10% 0 10%; }
@@ -10228,57 +10297,19 @@ p {
   background-position: left center; }
 
 @media screen and (min-width: 300px) {
-  .landing {
-    background-image: url(/Images/bg-wave-s.svg);
-    min-height: 90vh;
-    padding-top: 14vh; }
   .mp-vertical-padded-container {
     padding: 15px 8vw 5px 8vw; } }
 
 @media screen and (min-width: 768px) {
   .mp-vertical-padded-container {
-    padding: 15px 4vw 5px 4vw; }
-  .landing {
-    min-height: 75vh;
-    background-image: url(/Images/bg-wave-m.svg);
-    padding-top: 16vh; } }
+    padding: 15px 4vw 5px 4vw; } }
 
 @media screen and (min-width: 1024px) {
   .container-fluid.navbar-container {
     padding: 0 3%; }
   .mp-vertical-padded-container {
     padding-top: 25px;
-    padding-bottom: 20px; }
-  .landing {
-    min-height: 75vh;
-    background-image: url(/Images/bg-wave-l.svg);
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 18vh; } }
-
-@media screen and (min-width: 1200px) {
-  .landing {
-    min-height: 75vh;
-    background-image: url(/Images/bg-wave-xl.svg);
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 22vh; } }
-
-.landing {
-  background-size: cover;
-  background-attachment: scroll;
-  background-position: top center;
-  background-repeat: no-repeat;
-  width: 200vw;
-  max-width: 100%; }
-
-.landing h1 {
-  font-size: 4em;
-  font-weight: 500; }
+    padding-bottom: 20px; } }
 
 .video-container {
   padding: 3vh 2vw; }
