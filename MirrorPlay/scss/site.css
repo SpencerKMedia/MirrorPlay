@@ -9947,37 +9947,6 @@ p {
 body.frontend {
   min-height: 100%; }
 
-@font-face {
-  font-family: 'Gotham';
-  src: url("Gotham-Medium.eot");
-  src: url("Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("Gotham-Medium.woff2") format("woff2"), url("Gotham-Medium.woff") format("woff"), url("Gotham-Medium.ttf") format("truetype"), url("Gotham-Medium.svg#Gotham-Medium") format("svg");
-  font-style: normal; }
-
-.pod {
-  background-size: contain;
-  font-family: Gotham;
-  min-height: 45vh;
-  max-height: 75vh;
-  height: auto;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  text-align: center;
-  padding: 0; }
-
-.pod.support {
-  background-image: url("/Images/POD 2.png");
-  background-image: url("/Images/POD 2.svg"); }
-
-.pod.create {
-  background-image: url("/Images/POD 1.png");
-  background-image: url("/Images/POD 1.svg"); }
-
-.pod.right {
-  background-position: right center; }
-
-.pod.left {
-  background-position: left center; }
-
 .navbar {
   min-height: 120px; }
 
@@ -10226,6 +10195,37 @@ p {
     max-width: 6.333%;
     width: 100%;
     margin: auto .75%; } }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("Gotham-Medium.eot");
+  src: url("Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("Gotham-Medium.woff2") format("woff2"), url("Gotham-Medium.woff") format("woff"), url("Gotham-Medium.ttf") format("truetype"), url("Gotham-Medium.svg#Gotham-Medium") format("svg");
+  font-style: normal; }
+
+.pod {
+  background-size: contain;
+  font-family: Gotham;
+  min-height: 45vh;
+  max-height: 75vh;
+  height: auto;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0; }
+
+.pod.support {
+  background-image: url("/Images/POD%202.png");
+  background-image: url("/Images/POD%202.svg"); }
+
+.pod.create {
+  background-image: url("/Images/POD%201.png");
+  background-image: url("/Images/POD%201.svg"); }
+
+.pod.right {
+  background-position: right center; }
+
+.pod.left {
+  background-position: left center; }
 
 @media screen and (min-width: 300px) {
   .landing {
